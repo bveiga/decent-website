@@ -1,4 +1,36 @@
 /* ---------------------------------------------------------------------
+FONTS
+------------------------------------------------------------------------ */
+@font-face {
+    font-family: oswald-light;
+    src: url('../media/fonts/oswald-light.eot');
+    src: url('../media/fonts/oswald-light.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/oswald-light.woff') format('woff'),
+        url('../media/fonts/oswald-light.ttf') format('truetype'),
+        url('../media/fonts/oswald-light.svg#Oswald-Light') format('svg');
+}
+
+@font-face {
+    font-family: oswald;
+    src: url('../media/fonts/oswald.eot');
+    src: url('../media/fonts/oswald.eot') format('embedded-opentype'),
+         url('../media/fonts/oswald.woff2') format('woff2'),
+         url('../media/fonts/oswald.woff') format('woff'),
+         url('../media/fonts/oswald.ttf') format('truetype'),
+         url('../media/fotns/oswald.svg#oswald') format('svg');
+}
+
+@font-face {
+    font-family: oswald-stencil;
+    src: url('../media/fonts/oswald-stencil.eot');
+    src: url('../media/fonts/oswald-stencil.eot?#iefix') format('embedded-opentype'),
+        url('../media/fonts/oswald-stencil.woff') format('woff'),
+        url('../media/fonts/oswald-stencil.ttf') format('truetype'),
+        url('../media/fonts/oswald-stencil.svg#OswaldStencil-Bold') format('svg');
+}
+
+
+/* ---------------------------------------------------------------------
 RESET CSS (thanks Eric Meyer)
 ------------------------------------------------------------------------ */
 html, body, div, span, applet, object, iframe,
@@ -26,6 +58,9 @@ time, mark, audio, video {
 
 body {
     line-height: 1;
+    height: 100%;
+    background-color: #d9d9d9;
+    font-family: oswald-light, "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
 }
 
 ol, ul {
@@ -50,6 +85,7 @@ table {
 /* Always show a vertical scrollbar, even when there is no scrolling */
 html {
     overflow-y: scroll;
+    height: 100%;
 }
 
 html {
@@ -104,3 +140,89 @@ textarea {
 /* ---------------------------------------------------------------------
  Base Styles
 ------------------------------------------------------------------------ */
+.header-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid #83c2d3;
+    background-color: white;
+}
+    .logo-holder {
+        position: relative;
+        display: block;
+        float: left;
+        height: 100%;
+    }
+        .logo-holder img {
+            height: 100%;
+        }
+
+    .menu-holder {
+        position: relative;
+        display: block;
+        float: right;
+        height: 100%;
+    }
+
+.header,
+.page {
+    position: relative;
+    display: block;
+    width: 980px;
+    margin: auto;
+    height: 100%;
+}
+
+ul.menu {
+    display: block;
+    height: 100%;
+}
+    .menu li {
+        position: relative;
+        display: block;
+        float: left;
+        padding: 22px 10px;
+        font-size: 22px;
+    }
+        .menu li:hover,
+        .menu li.selected {
+            cursor: pointer;
+            color: #83c2d3;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
