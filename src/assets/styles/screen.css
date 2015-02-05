@@ -386,7 +386,7 @@ a.accent {
 		width: 33%;
 	}
 	.two-third:first-child {
-		width: 66%;
+		width: 67%;
 	}
 
 .one-third,
@@ -400,7 +400,7 @@ a.accent {
         width: calc(33% - 30px);
     }
     .two-third {
-        width: calc(66% - 30px);
+        width: calc(67% - 30px);
     }
 
 .picture-frame {
@@ -416,7 +416,7 @@ a.accent {
 	}
 
 .about-holder {
-    background-color: white;
+    /*background-color: white;*/
     padding: 10px;
 }
     .about-holder p {
@@ -424,7 +424,7 @@ a.accent {
     }
 
 .info-holder {
-    background-color: white;
+    /*background-color: white;*/
     margin: 30px 0px 0px;
     padding: 10px;
 }
@@ -477,7 +477,7 @@ a.accent {
     display: block;
     width: 92%;
     margin: auto;
-    background-color: white;
+    /*background-color: white;*/
     padding: 20px;
     overflow: hidden;
 }
