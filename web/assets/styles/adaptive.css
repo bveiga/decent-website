@@ -17,6 +17,7 @@ BREAK #1
 		height: 55px;
 		font-size: 24px;
 	}
+
 }
 
 /* ---------------------------------------------------------------------
@@ -36,6 +37,20 @@ BREAK #2
 	    max-width: 436px;
 	}
 
+	.one-third, .one-third:first-child,
+	.two-third, .two-third:first-child {
+		width: 100%;
+		margin: 0px;
+	}
+
+	.picture-frame,
+	.about-holder {
+		max-width: 400px;
+		margin: auto;
+	}
+		.picture-frame p {
+			display: none;
+		}
 }
 
 /* ---------------------------------------------------------------------

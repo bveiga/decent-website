@@ -1,4 +1,10 @@
 /* ---------------------------------------------------------------------
+	COLORS
+	gray: #d9d9d9;
+
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
 	FONTS
 ------------------------------------------------------------------------ */
 @font-face {
@@ -37,7 +43,6 @@
 		url('../media/fonts/deftonestylus.ttf') format('truetype'),
 		url('../media/fonts/deftonestylus.svg#OswaldStencil-Bold') format('svg');
 }
-
 
 /* ---------------------------------------------------------------------
 	RESET CSS (thanks Eric Meyer)
@@ -152,7 +157,7 @@ html {
 
 body {
 	height: 100%;
-	background-color: #d9d9d9;
+	background-color: #F6F5F1;
 	font-family: oswald-light, "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
 }
 
@@ -174,9 +179,16 @@ p {
 	    text-align: left;
 	}
 
-h3 {
+h2 {
 	font-size: 40px;
+	text-align: left;
 	margin: 0px 10px 42px;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: left;
+    margin: 0px 0px 15px 0px;
 }
 
 h4 {
@@ -313,7 +325,6 @@ ul.menu {
 .page {
 	margin: 40px auto;
 	overflow: hidden;
-	text-align: center;
 }
 	.page ul.menu {
 		width: 235px;
@@ -325,7 +336,7 @@ ul.menu {
 			text-shadow: 1px 1px 1px black;
 		}
 		.page ul.menu li:hover {
-			color: white;
+			color: #d9d9d9;
 		}
 
 /* ---------------------------------------------------------------------
@@ -340,7 +351,7 @@ text.svg-font {
 }
 
 a.accent {
-	color: white;
+	color: #d9d9d9;
 	text-shadow: 1px 1px 1px black;
 	-webkit-transition: all .3s linear;
 	-o-transition: all .3s linear;
@@ -357,8 +368,74 @@ a.accent {
 .howdy-holder {
 	display: block;
 	max-width: 600px;
+	text-align: center;
 	margin: auto;
 }
+
+.one-third:first-child,
+.two-third:first-child {
+    margin-left: 0px;
+}
+	.one-third:first-child {
+		width: 33%;
+	}
+	.two-third:first-child {
+		width: 66%;
+	}
+
+.one-third,
+.two-third {
+    position: relative;
+    margin-left: 30px;
+    display: block;
+    float: left;
+}
+    .one-third {
+        width: calc(33% - 30px);
+    }
+    .two-third {
+        width: calc(66% - 30px);
+    }
+
+.picture-frame {
+    background-color: white;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+    .picture-frame img {
+        width: 100%;
+    }
+    .picture-frame p {
+		margin: 10px 0px 0px;
+	}
+
+.about-holder {
+    background-color: white;
+    padding: 10px;
+}
+    .about-holder p {
+        font-size: 20px;         
+    }
+
+/* ---------------------------------------------------------------------
+	Terminal Styles
+------------------------------------------------------------------------ */
+.terminal-window {
+    font-family: courier, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+    .terminal-window p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .terminal-window h3 {
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+
+
 /* ---------------------------------------------------------------------
 	Form Styles
 ------------------------------------------------------------------------ */
