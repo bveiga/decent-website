@@ -1,37 +1,46 @@
 /* ---------------------------------------------------------------------
-FONTS
+	FONTS
 ------------------------------------------------------------------------ */
 @font-face {
-    font-family: oswald-light;
-    src: url('../media/fonts/oswald-light.eot');
-    src: url('../media/fonts/oswald-light.eot?#iefix') format('embedded-opentype'),
-        url('../media/fonts/oswald-light.woff') format('woff'),
-        url('../media/fonts/oswald-light.ttf') format('truetype'),
-        url('../media/fonts/oswald-light.svg#Oswald-Light') format('svg');
+	font-family: oswald-light;
+	src: url('../media/fonts/oswald-light.eot');
+	src: url('../media/fonts/oswald-light.eot?#iefix') format('embedded-opentype'),
+		url('../media/fonts/oswald-light.woff') format('woff'),
+		url('../media/fonts/oswald-light.ttf') format('truetype'),
+		url('../media/fonts/oswald-light.svg#Oswald-Light') format('svg');
 }
 
 @font-face {
-    font-family: oswald;
-    src: url('../media/fonts/oswald.eot');
-    src: url('../media/fonts/oswald.eot') format('embedded-opentype'),
-         url('../media/fonts/oswald.woff2') format('woff2'),
-         url('../media/fonts/oswald.woff') format('woff'),
-         url('../media/fonts/oswald.ttf') format('truetype'),
-         url('../media/fotns/oswald.svg#oswald') format('svg');
+	font-family: oswald;
+	src: url('../media/fonts/oswald.eot');
+	src: url('../media/fonts/oswald.eot') format('embedded-opentype'),
+		 url('../media/fonts/oswald.woff2') format('woff2'),
+		 url('../media/fonts/oswald.woff') format('woff'),
+		 url('../media/fonts/oswald.ttf') format('truetype'),
+		 url('../media/fotns/oswald.svg#oswald') format('svg');
 }
 
 @font-face {
-    font-family: oswald-stencil;
-    src: url('../media/fonts/oswald-stencil.eot');
-    src: url('../media/fonts/oswald-stencil.eot?#iefix') format('embedded-opentype'),
-        url('../media/fonts/oswald-stencil.woff') format('woff'),
-        url('../media/fonts/oswald-stencil.ttf') format('truetype'),
-        url('../media/fonts/oswald-stencil.svg#OswaldStencil-Bold') format('svg');
+	font-family: oswald-stencil;
+	src: url('../media/fonts/oswald-stencil.eot');
+	src: url('../media/fonts/oswald-stencil.eot?#iefix') format('embedded-opentype'),
+		url('../media/fonts/oswald-stencil.woff') format('woff'),
+		url('../media/fonts/oswald-stencil.ttf') format('truetype'),
+		url('../media/fonts/oswald-stencil.svg#OswaldStencil-Bold') format('svg');
+}
+
+@font-face {
+	font-family: deftonestylus;
+	src: url('../media/fonts/deftonestylus.eot');
+	src: url('../media/fonts/deftonestylus.eot?#iefix') format('embedded-opentype'),
+		url('../media/fonts/deftonestylus.woff') format('woff'),
+		url('../media/fonts/deftonestylus.ttf') format('truetype'),
+		url('../media/fonts/deftonestylus.svg#OswaldStencil-Bold') format('svg');
 }
 
 
 /* ---------------------------------------------------------------------
-RESET CSS (thanks Eric Meyer)
+	RESET CSS (thanks Eric Meyer)
 ------------------------------------------------------------------------ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,155 +55,340 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
 }
 
 body {
-    line-height: 1;
-    height: 100%;
-    background-color: #d9d9d9;
-    font-family: oswald-light, "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+	line-height: 1;
 }
 
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Always show a vertical scrollbar, even when there is no scrolling */
 html {
-    overflow-y: scroll;
-    height: 100%;
+	overflow-y: scroll;
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
 
+
 /* ---------------------------------------------------------------------
- HTML5 Element Reset
+	HTML5 Element Reset
 ------------------------------------------------------------------------ */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
-    display: block;
+	display: block;
 }
 
 audio, canvas, video, progress, picture {
-    display: inline-block;
+	display: inline-block;
 }
 
 template {
-    display: none;
+	display: none;
 }
 
 /* ---------------------------------------------------------------------
- Form Reset Styles
+	Form Reset Styles
 ------------------------------------------------------------------------ */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 input[type="search"] {
-    -webkit-appearance: none;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+	-webkit-appearance: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 textarea {
-    overflow: auto;
-    vertical-align: top;
-    resize: vertical;
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
 }
 
 ::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+	border: 0;
+	padding: 0;
 }
 
 /* ---------------------------------------------------------------------
- Base Styles
+	Base Elements
+------------------------------------------------------------------------ */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #d9d9d9;
+	font-family: oswald-light, "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+
+p {
+    text-align: left;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 12px;
+}
+	p.bold {
+	    font-size: 35px;
+	    font-family: oswald, sans-serif;
+	    text-align: left;
+	}
+
+h3 {
+	font-size: 40px;
+	margin: 0px 10px 42px;
+}
+
+h4 {
+	font-family: oswald, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+label,
+input,
+textarea {
+	position: relative;
+	width: calc(100% - 22px);
+	margin: 8px 0px;
+	font-family: oswald, sans-serif;
+}
+input {
+	height: 40px;
+	padding-left: 10px;
+	line-height: 30px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+	input[type="submit"] {
+		cursor: pointer;
+		width: 98%;
+		height: 40px;
+		background: #DD4B39;
+		line-height: 22px;
+		color: white;
+		font-family: oswald, "Helvetica Neue";
+		font-size: 18px;
+		border: none;
+		margin-bottom: 10px;
+		padding: 10px;
+		box-shadow: 0px 3px #E00000;
+		-moz-box-shadow: 0px 3px #E00000;
+		-webkit-box-shadow: 0px 3px #E00000;
+	}
+		input[type="submit"]:hover {
+			position:relative;
+			top:3px;
+			box-shadow:none;
+			-moz-box-shadow:none;
+			-webkit-box-shadow:none;
+		}
+
+textarea {
+	line-height: 30px;
+	font-size: 20px;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	width: calc(98% - 20px);
+	height: 115px;
+}
+
+::-webkit-input-placeholder, /* WebKit browsers */
+:-moz-placeholder, /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder, /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    black;
+   opacity:  1;
+}
+
+/* ---------------------------------------------------------------------
+	Header
 ------------------------------------------------------------------------ */
 .header-wrap {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 65px;
-    border-bottom: 2px solid #83c2d3;
-    background-color: white;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 65px;
+	border-bottom: 2px solid #83c2d3;
+	background-color: white;
 }
-    .logo-holder {
-        position: relative;
-        display: block;
-        float: left;
-        height: 100%;
-    }
-        .logo-holder img {
-            height: 100%;
-        }
+	.logo-holder {
+		position: relative;
+		display: block;
+		float: left;
+		height: 100%;
+	}
+		.logo-holder img {
+			height: 100%;
+		}
 
-    .menu-holder {
-        position: relative;
-        display: block;
-        float: right;
-        height: 100%;
-    }
+	.menu-holder {
+		position: relative;
+		display: block;
+		float: right;
+		height: 100%;
+	}
 
 .header,
 .page {
-    position: relative;
-    display: block;
-    width: 980px;
-    margin: auto;
-    height: 100%;
+	position: relative;
+	display: block;
+	width: 980px;
+	margin: auto;
+	height: 100%;
 }
 
 ul.menu {
-    display: block;
-    height: 100%;
+	display: block;
+	height: 100%;
 }
-    .menu li {
-        position: relative;
-        display: block;
-        float: left;
-        padding: 22px 10px;
-        font-size: 22px;
-    }
-        .menu li:hover,
-        .menu li.selected {
-            cursor: pointer;
-            color: #83c2d3;
-        }
+	.menu li {
+		position: relative;
+		display: block;
+		float: left;
+		padding: 22px 10px;
+		font-size: 22px;
+	}
+		.menu li:hover,
+		.menu li.selected {
+			cursor: pointer;
+			color: #83c2d3;
+		}
 
+/* ---------------------------------------------------------------------
+	Page Styles
+------------------------------------------------------------------------ */
+.page-wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: calc(100% - 67px);
+	overflow: auto;
+}
+	.page-wrap.contact {
+		background-color: #F6F5F1;
+	}
 
+.page {
+	margin: 40px auto;
+	overflow: hidden;
+	text-align: center;
+}
+	.page ul.menu {
+		width: 235px;
+		margin: auto;
+		overflow: auto;
+	}
+		.page ul.menu a {
+			color: #FFCC00;
+			text-shadow: 1px 1px 1px black;
+		}
+		.page ul.menu li:hover {
+			color: white;
+		}
 
+/* ---------------------------------------------------------------------
+	Others Styles
+------------------------------------------------------------------------ */
+text.svg-font {
+	font-family: deftonestylus, sans-serif;
+	font-weight: normal;
+	font-size: 150px;
+	line-height: 200px;
+	color: #363636;
+}
 
+a.accent {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-kthtml-transition: all .3s linear;
+	transition: all .3s linear;
+}
+	a.accent:hover {
+		color: #FFCC00;
+		text-shadow: 1px 1px 1px black;
+	}
 
+.howdy-holder {
+	display: block;
+	max-width: 600px;
+	margin: auto;
+}
+/* ---------------------------------------------------------------------
+	Form Styles
+------------------------------------------------------------------------ */
+.form-side, .info-side {
+	float: left;
+	display: block;
+	margin: 0px 10px;
+}
+	.form-side {
+		width: calc(450px - 20px);
+	}
+	.info-side {
+		width: calc(250px - 20px);
+	}
+
+.social img {
+	float: left;
+	width: 80px;
+	margin: 10px 7.5px;
+}
+
+.email-holder {
+    position: relative;
+    display: block;
+    width: 92%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
+}
 
 
 

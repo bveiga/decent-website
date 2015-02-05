@@ -6,6 +6,17 @@ BREAK #1
 	.page {
 		width: 720px;
 	}
+	
+	.form-side,
+	.info-side {
+		width: 99%;
+		margin-bottom: 50px;
+	}
+
+	input[type="submit"] {
+		height: 55px;
+		font-size: 24px;
+	}
 }
 
 /* ---------------------------------------------------------------------
@@ -16,6 +27,15 @@ BREAK #2
 	.page {
 		width: 640px;
 	}
+
+	text.svg-font {
+	    font-size: 110px;
+	}
+
+	.howdy-holder {
+	    max-width: 436px;
+	}
+
 }
 
 /* ---------------------------------------------------------------------
@@ -24,6 +44,61 @@ BREAK #3
 @media only screen and (max-width: 640px) {
 	.header,
 	.page {
-		width: 100%;
+		width: calc(98% - 60px);
+	}
+	
+	.header {
+		margin: 0px 30px;
+	}
+
+	.page {
+		margin: 40px 30px;
 	}
 }
+
+/* ---------------------------------------------------------------------
+BREAK #4
+------------------------------------------------------------------------ */
+@media only screen and (max-width: 560px) {
+	h3 {
+		font-size: 28px;
+	}
+
+	text.svg-font {
+	    font-size: 100px;
+	}
+
+	.howdy-holder {
+	    max-width: 300px;
+	}
+}
+
+/* ---------------------------------------------------------------------
+BREAK #5
+------------------------------------------------------------------------ */
+@media only screen and (max-width: 440px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
