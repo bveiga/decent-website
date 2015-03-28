@@ -75,6 +75,11 @@ BREAK #3
 BREAK #4
 ------------------------------------------------------------------------ */
 @media only screen and (max-width: 560px) {
+	.page {
+		width: calc(100% - 20px);
+		margin: 40px 10px;
+	}
+
 	h3 {
 		font-size: 28px;
 	}
@@ -86,12 +91,32 @@ BREAK #4
 	.howdy-holder {
 	    max-width: 300px;
 	}
+
+	.form-side {
+		width: 99%;
+		margin: 0px;
+	}
 }
 
 /* ---------------------------------------------------------------------
 BREAK #5
 ------------------------------------------------------------------------ */
 @media only screen and (max-width: 440px) {
+	.logo-holder {
+		float: none;
+		width: 130px;
+		margin: auto;
+	}
+	.menu-holder {
+		float: none;
+		width: 232px;
+		margin: auto;
+	}
+
+	text.svg-font {
+		font-size: 85px;
+		line-height: 150px;
+	}
 }
 
 

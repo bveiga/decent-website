@@ -212,6 +212,10 @@ input {
 	line-height: 30px;
 	font-size: 20px;
 	letter-spacing: 1px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 	input[type="submit"] {
 		cursor: pointer;
@@ -228,6 +232,8 @@ input {
 		box-shadow: 0px 3px #E00000;
 		-moz-box-shadow: 0px 3px #E00000;
 		-webkit-box-shadow: 0px 3px #E00000;
+		-webkit-appearance: none;
+		-moz-appearance: none;
 	}
 		input[type="submit"]:hover {
 			position:relative;
@@ -351,6 +357,8 @@ text.svg-font {
 }
 
 a.accent {
+	display: inline-block;
+	height: 45px;
 	color: #d9d9d9;
 	text-shadow: 1px 1px 1px black;
 	-webkit-transition: all .3s linear;
