@@ -7,14 +7,14 @@
 	<!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
 	
 	<!-- SEO -->
-	<title>Bruno Veiga | Developer</title>
+	<title>Bruno Veiga | Contact Me</title>
 
 	<!-- STYLESHEETS -->
 	<!-- build:css /assets/styles/screen.css -->
 	<!-- bower:css -->
 	<!-- endbower -->
 	<link rel="stylesheet" media="screen, projection" href="/assets/styles/screen.css" />
-	 <link rel="stylesheet" media="screen, projection" href="/assets/styles/adaptive.css" />
+	<link rel="stylesheet" media="screen, projection" href="/assets/styles/adaptive.css" />
 	<!-- endbuild -->
 </head>
 <body>
@@ -28,15 +28,15 @@
             </div>
             <div class="menu-holder">
                 <ul class="menu">
-                    <a href="/about/">
-                        <li>About</li>
-                    </a>
-                    <a href="/portfolio/">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="/contact/">
-                        <li>Contact</li>
-                    </a>
+                    <li>
+                        <a href="/about/">About</a>    
+                    </li>
+                    <li>
+                        <a href="/portfolio/">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/contact/">Contact</a>
+                    </li>
                 </ul>
             </div>
 		</div>
@@ -113,19 +113,25 @@ if(isset($_POST['email'])) {
 	</div>
 
 	<!-- JAVASCRIPT -->
-	<!-- build:js /assets/scripts/main.js -->
-	<!-- bower:js -->
-	<script src="/assets/vendor/nerdery-function-bind/index.js"></script>
-	<script src="/assets/vendor/jquery/dist/jquery.js"></script>
-	<!-- endbower -->
-	<script src="/assets/scripts/shim.js"></script>
+    <!-- build:js /assets/scripts/main.js -->
+    <!-- bower:js -->
+    <script src="/assets/vendor/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
 
-	<!-- Stuff goes here for app -->
-	<script src="/assets/scripts/views/TestView.js"></script>
+    <!-- Custom Scripts -->
+    <script src="/assets/scripts/main.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<script src="/assets/scripts/App.js"></script>
-	<script src="/assets/scripts/main.js"></script>
-	<!-- endbuild -->
+        ga('create', 'UA-47234474-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- endbuild -->
 </body>
 </html>
 <?php
