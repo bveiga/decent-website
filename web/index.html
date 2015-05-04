@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en-us">
+<html class="no-js" lang="en-us" ng-app="angularjs-app" ng-controller="mainController">
 <head>
     <!-- META DATA -->
     <meta charset="utf-8" />
@@ -7,56 +7,31 @@
     <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
     
     <!-- SEO -->
-    <title>Bruno Veiga | Developer</title>
+    <title>{{ Page.title() }}</title>
+    <!-- <title>Bruno Veiga | Developer</title> -->
 
     <!-- STYLESHEETS -->
-    <!-- build:css /assets/styles/screen.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
     <link rel="stylesheet" media="screen, projection" href="/assets/styles/screen.css" />
     <link rel="stylesheet" media="screen, projection" href="/assets/styles/adaptive.css" />
-    <!-- endbuild -->
 </head>
 <body>
-    <!-- Content -->
-    <div class="page-wrap">
-        <div class="page">
-            <div class="howdy-holder">
-                <svg>
-                    <text class="svg-font" x="60" y="100">
-                        Howdy!
-                    </text>
-                </svg>
-                <p class="bold">I'm Bruno Veiga.</p>
-                <p>
-                    I write code in languages like C++, and Java. I also make clean, responsive web solutions using HTML5,
-                    CSS3, and Javascript. Find me on
-                    <a target="_blank" class="accent" href="http://www.linkedin.com/in/brunosantanaveiga">linkedin</a>
-                    or <a class="accent" href="/contact/">say hello.</a>
-                </p>
-                <ul class="menu">
-                    <li>
-                        <a href="/about/">About</a>    
-                    </li>
-                    <li>
-                        <a href="/portfolio/">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/contact/">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Header -->
+    <div ng-if="Page.getLH()">
+        <div ng-include src="'/views/header.html'"></div>
     </div>
 
-    <!-- JAVASCRIPT -->
-    <!-- build:js /assets/scripts/main.js -->
-    <!-- bower:js -->
-    <script src="/assets/vendor/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
+    <!-- Content -->
+    <div class="page-wrap" ng-view></div>
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="/assets/vendor/jquery/dist/jquery.js"></script>
+
+    <!-- Angular JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="/assets/scripts/main.js"></script>
+    <script type="text/javascript" src="/assets/scripts/main.js"></script>
     
     <!-- Google Analytics -->
     <script>
@@ -68,6 +43,5 @@
         ga('create', 'UA-47234474-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <!-- endbuild -->
 </body>
 </html>

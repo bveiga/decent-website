@@ -1,16 +1,73 @@
-var NRD = window.NRD || {};
+var app = angular.module('angularjs-app', ['ngRoute']);
 
-(function() {
-    'use strict';
+app.config(function($routeProvider) {
+	$routeProvider
+		.when('/',{
+		    templateUrl: '../../views/page-home.html',
+		    controller: homeCtrl
+		})
+		.when('/about/',{
+		    templateUrl: '../../views/page-about.html',
+		    controller: aboutCtrl
+		})
+		.when('/portfolio/',{
+		    templateUrl: '../../views/page-portfolio.html',
+		    controller: portfolioCtrl
+		})
+		.when('/contact/',{
+		    templateUrl: '../../views/page-contact.html',
+		    controller: contactCtrl
+		});
+		// .otherwise({
+		// 	redirectTo:'/'
+		// });
+});
 
-    // The only purpose of this file is to kick off your application's top-level
-    // controller at the appropriate time. All other code should be written as
-    // separate modules in their own files.
+app.factory('Page', function(){
+	var title = 'Bruno Veiga | Developer';
+	var loadHeader = false;
 
-    // Require
-    var App = NRD['./App'];
+	return {
+		title: function() { return title; },
+		setTitle: function(newTitle) { title = newTitle; },
+		getLH: function(value) { return loadHeader; },
+		setLH: function(value) { loadHeader = value; },
+	};
+});
 
-    // Initialize
-    window.app = new App();
+// Main Controller
+app.controller('mainController', function($scope, Page) {
+	$scope.Page = Page;
+});
 
-}());
+// Specific Controllers
+function homeCtrl($scope, Page) {
+	Page.setTitle('Bruno Veiga | Developer');
+	Page.setLH(false);
+}
+function aboutCtrl($scope, Page) {
+	Page.setTitle('Bruno Veiga | About Me');
+	Page.setLH(true);
+}
+function portfolioCtrl($scope, Page) {
+	Page.setTitle('Bruno Veiga | Portfolio');
+	Page.setLH(true);
+}
+function contactCtrl($scope, Page) {
+	Page.setTitle('Bruno Veiga | Contact Me');
+	Page.setLH(true);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
