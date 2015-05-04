@@ -17,7 +17,10 @@ BREAK #1
 		height: 55px;
 		font-size: 24px;
 	}
-
+	
+	.picture-frame p {
+		font-size: 20px;
+	}
 }
 
 /* ---------------------------------------------------------------------
@@ -51,6 +54,10 @@ BREAK #2
 		.page-wrap.about .picture-frame p {
 			display: none;
 		}
+
+	.picture-frame p {
+		font-size: 25px;
+	}
 }
 
 /* ---------------------------------------------------------------------
@@ -89,7 +96,7 @@ BREAK #4
 	}
 
 	.howdy-holder {
-	    max-width: 300px;
+	    max-width: 400px;
 	}
 
 	.form-side {

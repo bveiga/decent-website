@@ -260,6 +260,10 @@ textarea {
    opacity:  1;
 }
 
+svg {
+	width: 100%;
+}
+
 /* ---------------------------------------------------------------------
 	Header
 ------------------------------------------------------------------------ */
@@ -307,10 +311,10 @@ ul.menu {
 		float: left;
 		padding: 22px 10px;
 		font-size: 22px;
+		cursor: pointer;
 	}
-		.menu li:hover,
-		.menu li.selected {
-			cursor: pointer;
+		.menu li:hover a,
+		.menu li.selected a {
 			color: #83c2d3;
 		}
 
@@ -341,7 +345,7 @@ ul.menu {
 			color: #FFCC00;
 			text-shadow: 1px 1px 1px black;
 		}
-		.page ul.menu li:hover {
+		.page ul.menu li:hover a {
 			color: #d9d9d9;
 		}
 
@@ -359,7 +363,7 @@ text.svg-font {
 a.accent {
 	display: inline-block;
 	height: 38px;
-	color: #d9d9d9;
+	color: #b9b9b9;
 	text-shadow: 1px 1px 1px black;
 	-webkit-transition: all .3s linear;
 	-o-transition: all .3s linear;
